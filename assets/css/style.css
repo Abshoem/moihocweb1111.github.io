@@ -1,0 +1,434 @@
+/* reset css*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear:both;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-while {
+    color:#fff !important;
+}
+
+#main {
+
+}
+
+#header {
+    height:46px;
+    background-color:#000;
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    z-index: 1;
+}
+
+#nav {
+    display:inline-block;
+}
+#nav , .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+
+#nav  li {
+    
+    position: relative;
+    
+}
+
+#nav li a {
+    
+    text-decoration:none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display:block;
+
+}
+
+#nav > li:hover > a {
+    background-color: #ccc;
+    color:#000;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-btn {
+    
+    
+    float:right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+}
+
+#header .search-icon {
+    color:#fff;
+    font-size:20px;
+    line-height: 46px;
+    
+    
+    
+}
+
+
+
+
+
+#nav > li > a {
+    color:#fff;
+    text-transform: uppercase;
+}
+
+#nav .subnav a {
+    color:#000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .subnav li:hover {
+    background-color: #ccc;
+    color:#000;
+}
+
+#nav li:hover .subnav {
+    display:block;
+}
+
+
+#nav .subnav  {
+    display: none;
+    position:absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    min-width: 160px;
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%; /* 50% chieu ngang cua chinh no */
+    position: relative;
+    background:url('/thang1/assets/img/chicago.jpg') top center / cover no-repeat;
+
+}
+
+#slider .text-content {
+    position:absolute;
+    bottom: 47px;
+    left:0;
+    right:0;
+    color:#fff;
+    text-align: center;
+    
+}
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-desription {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content {
+    
+}
+
+#content .section-heading {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+#content .section-sub-heading {
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+.content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0px;
+}
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float:left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-name {
+    text-align: center;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* tour section */
+.tour-section {
+    background-color: #000;
+}
+
+
+.tour-section .tickets-list {
+    list-style-type: none;
+    margin-top: 30px;
+    background-color: #fff;   
+    
+}
+
+.tickets-list li {
+    font-size: 15px;
+    padding:11px 16px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.tickets-list .sold-out {
+    background-color: #f44336;
+    color:#fff;
+    margin-left: 16px;
+    padding: 3px 4px;
+}
+
+.tickets-list .quantity {
+    float:right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color:#fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+}
+
+.place-list {
+   margin: 32px -8px 0px;
+   padding: 48px;
+}
+
+.place-item {
+   float: left;
+   padding: 0px 8px;
+   width: 33.33333%;
+   
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+.place-heading {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.place-time {
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-body .place-btn {
+    text-decoration: none;
+    background-color: #000;
+    color:#fff;
+    padding: 11px 16px;
+    display:inline-block;
+    margin-top: 15px;
+    
+}
+
+.place-btn:hover {
+    background-color: #ccc;
+    color:#000;
+    cursor: pointer;
+    
+    padding: 13px 18px; /* dp border:none bi mat di nen phai padding them*/
+    border:none;
+}
+
+/* footer section */
+#footer {
+   
+}
+
+
+.modal {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+    display:none;
+}
+
+.modal .modal-container {
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px ;
+    position: relative;
+}
+
+.modal-header {
+    background-color: #009688;
+    height: 130px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color:#fff;
+    
+}
+
+.icon-ti-bag {
+    margin-right: 16px;
+}
+
+.modal-close {
+    position: absolute;
+    right:0;
+    top:0;
+    padding: 14px;
+}
+
+.modal-close .ti-close {
+    color:#fff;
+}
+
+.modal-close:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+
+
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display:block;
+    font-size: 15px;
+}
+
+.input-modal {
+    padding: 10px;
+    width: 100%;
+    border:1px solid #ccc;
+    font-size:15px;
+    margin: 15px 0px;
+}
+
+#buy-ticket {
+    background-color: #009688;
+    border: none;
+    width: 100%;
+    color:#fff;
+    text-transform: uppercase;
+    padding: 18px;
+}
+
+#buy-ticket:hover {
+    background-color: #ccc;
+    color:#000;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-footer {
+    padding: 20px;
+    text-align: right;
+    position: relative;
+}
+
+.modal-close-btn .close-modal-btn {
+    position: absolute;
+    bottom: 0;
+    background-color: #f44336;
+    border:none;
+    padding: 11px 18px;
+    color:#fff;
+    margin-left: 16px;
+    margin-bottom: 10px;
+    font-size:15px;
+
+}
+
+.modal-close-btn .close-modal-btn:hover {
+    background-color: #ccc;
+    color:#000;
+    cursor: pointer;
+    
+}
+
+.modal-help {
+font-size:15px;
+}
+
+.modal-footer a {
+    color:#2196F3;
+}
+
+.modal.open {
+    display: flex;
+}
+
+
+
+
