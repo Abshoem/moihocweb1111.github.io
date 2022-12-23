@@ -17,6 +17,74 @@ html {
     color:#fff !important;
 }
 
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.pull-right {
+    float:right !important;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #000;
+    color:#fff;
+    padding: 11px 16px;
+    display:inline-block;
+    margin-top: 15px;
+    
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color:#000;
+    cursor: pointer;
+    
+    padding: 13px 18px; /* dp border:none bi mat di nen phai padding them*/
+    border:none;
+}
+
+
+
+
+
 #main {
 
 }
@@ -125,7 +193,7 @@ html {
     margin-top: 46px;
     padding-top: 50%; /* 50% chieu ngang cua chinh no */
     position: relative;
-    background:url('/thang1/assets/img/chicago.jpg') top center / cover no-repeat;
+    background:url('/thang1/img/chicago.jpg') top center / cover no-repeat;
 
 }
 
@@ -183,11 +251,6 @@ html {
     margin-top: 48px;
 }
 
-#content .member-item {
-    float:left;
-    width: 33.33333%;
-    text-align: center;
-}
 
 #content .member-name {
     text-align: center;
@@ -239,16 +302,12 @@ html {
 }
 
 .place-list {
-   margin: 32px -8px 0px;
-   padding: 48px;
+   margin-top: 32px;
+   margin-bottom: 48px;
+
 }
 
-.place-item {
-   float: left;
-   padding: 0px 8px;
-   width: 33.33333%;
-   
-}
+
 
 .place-img {
     width: 100%;
@@ -279,28 +338,63 @@ html {
     font-size: 15px;
 }
 
-.place-body .place-btn {
-    text-decoration: none;
-    background-color: #000;
-    color:#fff;
-    padding: 11px 16px;
-    display:inline-block;
-    margin-top: 15px;
-    
+
+.contact-content {
+    margin-top: 48px;
+   
 }
 
-.place-btn:hover {
-    background-color: #ccc;
-    color:#000;
-    cursor: pointer;
-    
-    padding: 13px 18px; /* dp border:none bi mat di nen phai padding them*/
-    border:none;
+.contact-info i[class*="ti-"] {
+    font-style: 18px;
+    width: 30px;
+    display: inline-block;
+    line-height: 1.5;
 }
+
+.contact-form {
+    font-style: 15px;
+
+}
+
+
+.contact-form .formcontrol {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.map-section img {
+    width: 100%;
+}
+
 
 /* footer section */
 #footer {
+   padding: 64px 16px;
+   text-align: center;
    
+}
+
+#footer .social-list {
+    font-style: 24px;
+}
+
+#footer .social-list a {
+    color: rgba(0,0,0, 0.6);
+    text-decoration: none;
+}
+
+#footer .social-list a:hover {
+    color: rgba(0,0,0, 0.4);
+    cursor: pointer;
+}
+#footer  .copy-right {
+    margin-top: 15px;
+    color: rgba(0,0,0, 0.6);
+}
+
+#footer  .copy-right a {
+    color: rgba(0,0,0, 0.6);
 }
 
 
